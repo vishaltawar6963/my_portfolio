@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.png";
+import HeroImage from "../assets/hacker (1).png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
@@ -10,7 +10,7 @@ const Home = () => {
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 home"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-      <div className="small-screen hidden">
+        <div className="small-screen hidden">
           <img
             src={HeroImage}
             alt="profile"
@@ -24,10 +24,10 @@ const Home = () => {
           <p className="text-gray-500 py-4 max-w-md">
             I have 2 years of experience building websites and desgining software.
             I love to work on web application using technologies like
-            React, Tailwind, Next JS and GraphQL.
+            React, Redux, Bootstrap and Node.js.
           </p>
 
-          <div className="portfolio-btn">
+          <div className="portfolio-btn ">
             <Link
               to="portfolio"
               smooth
@@ -40,6 +40,9 @@ const Home = () => {
               </span>
             </Link>
           </div>
+          {/* <div className="portfolio-btn">
+            <button type="button" class="py-3 px-8 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Alternative</button>
+          </div> */}
         </div>
         <div className="big-screen">
           <img
@@ -48,7 +51,7 @@ const Home = () => {
             className="rounded-2xl mx-auto w-2/3 md:w-full"
           />
         </div>
-        
+
       </div>
     </div>
   );

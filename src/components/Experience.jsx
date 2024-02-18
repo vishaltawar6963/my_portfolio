@@ -12,6 +12,7 @@ import node from "../assets/node.png";
 import express from "../assets/express.png"
 import mongodb from "../assets/mongodb.png"
 import redux from "../assets/redux.png"
+import bootstrap from "../assets/bootstrap-logo-shadow.png"
 const Experience = () => {
   const techs = [
     {
@@ -52,9 +53,9 @@ const Experience = () => {
     },
     {
       id: 7,
-      src: graphql,
-      title: "GraphQL",
-      style: "shadow-pink-400",
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-blue-800",
     },
     {
       id: 8,
@@ -91,7 +92,7 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen experience"
+      className="bg-gradient-to-b from-gray-800 to-black w-full h-full experience"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>

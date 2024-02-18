@@ -1,57 +1,45 @@
 import React from "react";
-import api from "../assets/portfolio/api.jpg";
-import apod from "../assets/portfolio/apod.jpg";
-import iptracker from "../assets/portfolio/iptracker.jpg";
-import nftportal from "../assets/portfolio/nftportal.jpg";
-import webpostman from "../assets/portfolio/webpostman.jpg";
-import waveportal from "../assets/portfolio/waveportal.jpg";
 
+import money_manager from "../assets/portfolio/money-manager.png";
+import tublight from "../assets/portfolio/tublight.png";
+import portfolio from "../assets/portfolio/demo-portfolio.png";
+import ttt from "../assets/portfolio/tic-tac-toe.jpg";
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: api,
-      link: 'https://crypto-info-api.cyclic.app/',
-      repo: 'https://github.com/rahulkarda/crypto-info-api'
+      src: tublight,
+      link: 'https://vishaltawar6963.github.io/tublite-effect/',
+      repo: 'https://github.com/vishaltawar6963/tublite-effect'
     },
     {
       id: 2,
-      src: webpostman,
-      link: 'https://webpostman.netlify.app/',
-      repo: 'https://github.com/rahulkarda/Web-Postman'
+      src: money_manager,
+      link: 'https://vishaltawar6963.github.io/Money_manager_app/',
+      repo: 'https://github.com/vishaltawar6963/Money_manager_app'
     },
     {
       id: 3,
-      src: apod,
-      link: 'https://apodbyrahul.netlify.app/',
-      repo: 'https://github.com/rahulkarda/NASA-APOD'
+      src: portfolio,
+      link: 'https://vishaltawar6963.github.io/portfolio/',
+      repo: 'https://github.com/vishaltawar6963/portfolio'
     },
     {
       id: 4,
-      src: waveportal,
-      link: 'https://waveatrahul.netlify.app/',
-      repo: 'https://github.com/rahulkarda/Wave-Portal'
+      src: ttt,
+      link: 'https://vishaltawar6963.github.io/tictactoe/',
+      repo: 'https://github.com/vishaltawar6963/tictactoe'
     },
-    {
-      id: 5,
-      src: nftportal,
-      link: 'https://nftportalbyrahul.netlify.app/',
-      repo: 'https://github.com/rahulkarda/NFT-Portal'
-    },
-    {
-      id: 6,
-      src: iptracker,
-      link: 'https://trackmyip.netlify.app/',
-      repo: 'https://github.com/rahulkarda/IP-Address-Tracker'
-    },
-  ];
+   
+    
+  ].reverse()
 
   return (
     <div
       name="portfolio"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen portfolio"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full ">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
@@ -59,7 +47,7 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 overflow-y-auto w-full scrollbar-hide py-5">
           {portfolios.map(({ id, src, link, repo }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
