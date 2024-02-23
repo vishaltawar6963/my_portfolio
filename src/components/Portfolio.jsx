@@ -4,6 +4,8 @@ import money_manager from "../assets/portfolio/money-manager.png";
 import tublight from "../assets/portfolio/tublight.png";
 import portfolio from "../assets/portfolio/demo-portfolio.png";
 import ttt from "../assets/portfolio/tic-tac-toe.jpg";
+import blog from "../assets/portfolio/blog.png";
+import mynote from "../assets/portfolio/my notes.png";
 const Portfolio = () => {
   const portfolios = [
     {
@@ -29,6 +31,18 @@ const Portfolio = () => {
       src: ttt,
       link: 'https://vishaltawar6963.github.io/tictactoe/',
       repo: 'https://github.com/vishaltawar6963/tictactoe'
+    },
+    {
+      id: 5,
+      src: blog,
+      link: 'https://blog-gamma-two-37.vercel.app/',
+      repo: 'https://github.com/vishaltawar6963/blog'
+    },
+    {
+      id: 6,
+      src: mynote,
+      link: 'https://my-notes-rouge.vercel.app/',
+      repo: 'https://github.com/vishaltawar6963/my-notes-backend'
     },
    
     
